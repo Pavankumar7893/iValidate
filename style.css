@@ -5,7 +5,6 @@
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background: url("gradient-bg.svg") no-repeat center center fixed;
 }
 nav {
     display: flex;
