@@ -10,10 +10,19 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: -webkit-linear-gradient(rgb(19, 19, 18), rgb(255, 255, 204));
+    background: -webkit-linear-gradient(rgb(40, 40, 40), rgb(239, 239, 155));
     color: white;
     padding: 19px 12px;
 }
+/* nav .glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+} */
+
 
 ul {
     display: flex;
@@ -46,6 +55,7 @@ main{
 }
 
 .container{ 
+    display: inline-block;
     max-width: 80vw;
     margin: auto;
     padding: 9px 15px;
@@ -53,12 +63,34 @@ main{
 h1{
     
     background: -webkit-linear-gradient(rgb(110, 110, 110), rgb(0, 255, 89));
+    font-size: 25px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke:0.1px rgb(0, 0, 0);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 2px solid rgb(255, 235, 222); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   /* Adjust as needed */
+  animation: 
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
-.container h1{
-    padding: 12px 0;
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(121, 181, 71); }
+}
+
+.container h1 {
+    padding: 5px 0;
 }
 
 input[type='text']{
