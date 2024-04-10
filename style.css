@@ -55,7 +55,7 @@ main{
 }
 
 .container{ 
-    display: inline-block;
+   
     max-width: 80vw;
     margin: auto;
     padding: 9px 15px;
@@ -80,7 +80,7 @@ h1{
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 62% }
 }
 
 /* The typewriter cursor effect */
@@ -90,6 +90,7 @@ h1{
 }
 
 .container h1 {
+    display: inline-block; 
     padding: 5px 0;
 }
 
